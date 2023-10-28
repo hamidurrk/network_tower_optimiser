@@ -1,5 +1,4 @@
 import networkx as nx
-import math
 from math import radians, sin, cos, sqrt, atan2
 import matplotlib.pyplot as plt
 
@@ -93,15 +92,6 @@ nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels)
 plt.savefig("weighted_graph.png")
 plt.show()
 
-# Apply Dijkstra’s Algorithm: use networkx's shortest_path function
+# Apply Dijkstra’s Algorithm: use networkx's shortest_path function to go a specific amount of distance to all directions
 
-# Cover Nodes
-# covered_nodes = set()
-# circles = []
-# for node in nx.dfs_preorder_nodes(G):
-#     if node not in covered_nodes:
-#         # add a new circle covering this node
-#         circles.append(node)
-#         # update covered_nodes
-#         pass
-
+# Cover Nodes (basically circles)
